@@ -1,4 +1,4 @@
-package com.ldj.databinding
+package com.ldj.databinding.list
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -11,7 +11,13 @@ class MyListViewModel : ViewModel() {
     fun addButtonClicked() {
         data.value = data.value!!.toMutableList().apply {
             val itemNumber = itemCount++
-            add(ListItem(itemNumber, "Item $itemNumber", 0))
+            add(
+                ListItem(
+                    itemNumber,
+                    "Item $itemNumber",
+                    0
+                )
+            )
         }
     }
 

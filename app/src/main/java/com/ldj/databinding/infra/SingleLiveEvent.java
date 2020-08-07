@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package com.ldj.databinding;
+package com.ldj.databinding.infra;
 
 import android.util.Log;
 

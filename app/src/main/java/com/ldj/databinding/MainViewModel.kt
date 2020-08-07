@@ -2,6 +2,7 @@ package com.ldj.databinding
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.ldj.databinding.infra.SingleLiveEvent
 
 class MainViewModel : ViewModel() {
     private var count: Int = 0

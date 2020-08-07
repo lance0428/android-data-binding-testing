@@ -1,4 +1,4 @@
-package com.ldj.databinding
+package com.ldj.databinding.frag
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +9,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import com.ldj.databinding.MainViewModel
+import com.ldj.databinding.R
 import com.ldj.databinding.databinding.FragmentMyBinding
+import com.ldj.databinding.list.MyListFragmentActivity
 
 class MyFragment : Fragment() {
     private lateinit var model: MainViewModel

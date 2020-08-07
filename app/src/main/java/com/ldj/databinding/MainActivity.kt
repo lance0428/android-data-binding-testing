@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import com.ldj.databinding.databinding.ActivityMainBinding
+import com.ldj.databinding.frag.MyFragmentActivity
+import com.ldj.databinding.list.MyListFragmentActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

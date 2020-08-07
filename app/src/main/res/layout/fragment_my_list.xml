@@ -6,7 +6,7 @@
 
         <variable
             name="model"
-            type="com.ldj.databinding.MyListViewModel" />
+            type="com.ldj.databinding.list.MyListViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -1,4 +1,4 @@
-package com.ldj.databinding
+package com.ldj.databinding.list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,6 +8,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import com.ldj.databinding.R
 import com.ldj.databinding.databinding.FragmentMyListBinding
 import kotlinx.android.synthetic.main.fragment_my_list.*
 

@@ -1,8 +1,8 @@
-package com.ldj.databinding
+package com.ldj.databinding.list
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.FragmentActivity
+import com.ldj.databinding.R
 
 class MyListFragmentActivity : AppCompatActivity() {
 
