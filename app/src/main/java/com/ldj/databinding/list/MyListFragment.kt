@@ -10,10 +10,10 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.ldj.databinding.R
 import com.ldj.databinding.databinding.FragmentMyListBinding
-import kotlinx.android.synthetic.main.fragment_my_list.*
 
 class MyListFragment : Fragment() {
     private lateinit var model: MyListViewModel
+    private lateinit var adapter: MyListAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,13 +30,13 @@ class MyListFragment : Fragment() {
         )
         binding.lifecycleOwner = viewLifecycleOwner
         binding.model = model
+        adapter = MyListAdapter()
+        binding.adapter = adapter
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val adapter = MyListAdapter()
-        list.adapter = adapter
         model.data.observe(viewLifecycleOwner, Observer { data ->
             adapter.submitList(data)
         })

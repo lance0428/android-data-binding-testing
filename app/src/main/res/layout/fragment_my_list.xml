@@ -7,6 +7,10 @@
         <variable
             name="model"
             type="com.ldj.databinding.list.MyListViewModel" />
+
+        <variable
+            name="adapter"
+            type="com.ldj.databinding.list.MyListAdapter" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -53,6 +57,7 @@
             android:id="@+id/list"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            app:setAdapter="@{adapter}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
